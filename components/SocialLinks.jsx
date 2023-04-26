@@ -28,8 +28,8 @@ const SocialLinks = () => {
                 src={getIcon(link.title)}
                 className="flex-col"
                 alt="User Icon"
-                width={72}
-                height={72}
+                width={54}
+                height={54}
               />
             </>
           );
