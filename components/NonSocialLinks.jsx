@@ -8,11 +8,13 @@ const NonSocialLinks = () => {
         {socialLinks.map((link) => {
           return (
             <>
-              <button className="button">
-                <p className=" text-center text-4xl leading-10 align-middle">
-                  {link.title}
-                </p>
-              </button>
+              <a href={link.url}>
+                <button className="button">
+                  <p className=" text-center text-4xl leading-10 align-middle">
+                    {link.title}
+                  </p>
+                </button>
+              </a>
             </>
           );
         })}

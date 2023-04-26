@@ -24,13 +24,15 @@ const SocialLinks = () => {
           return (
             <>
               {" "}
-              <Image
-                src={getIcon(link.title)}
-                className="flex-col"
-                alt="User Icon"
-                width={54}
-                height={54}
-              />
+              <a href={link.url}>
+                <Image
+                  src={getIcon(link.title)}
+                  className="flex-col"
+                  alt="User Icon"
+                  width={54}
+                  height={54}
+                />
+              </a>
             </>
           );
         })}
